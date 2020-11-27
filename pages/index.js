@@ -90,8 +90,8 @@ export default function Home() {
 
           <p className={styles.dummyEmailContent}>
           Dear Rhody, 
-          <br />
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At ultrices mi tempus imperdiet nulla. Elementum nisi quis eleifend quam. Felis imperdiet proin fermentum leo vel orci. Eu mi bibendum neque egestas congue quisque egestas diam. Sem integer vitae justo eget. Tellus molestie nunc non blandit massa enim. Nec feugiat in fermentum posuere urna nec tincidunt praesent. 
+          <br /><br />
+          This is a sample of an important email body. Words, sentences, paragraphs, jokes,some emails will contain these, and more. 
           <br /><br />
           Sincerely,    
           </p>
