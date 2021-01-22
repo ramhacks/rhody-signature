@@ -21,6 +21,11 @@
   align-items: center;
 }
 
+.maxSpace{
+  justify-content: space-between;
+  align-items: center;
+}
+
 .infoEntry {
   padding: 15px;
   margin-right: 20px;
@@ -61,4 +66,8 @@
   padding: 10px;
   color: white;
   background-color: yellowgreen;
+}
+
+.githubBtn {
+  margin-top: 15px;
 }

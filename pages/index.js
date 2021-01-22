@@ -43,12 +43,23 @@ export default function Home() {
 
       {/* Instructions and application title */}
       <div className={styles.promo}>
-        <div className={`${styles.grid} ${styles.noSpace}`}>
-          <div><img src='https://storage.googleapis.com/web-spaces-production/signature/uri-logo.png' className={styles.logo} /></div>
-          <div><h1> URI Email Signature Tool</h1></div>
+        <div className={`${styles.grid} ${styles.maxSpace}`}>
+          <div>
+            <div className={`${styles.grid} ${styles.noSpace}`}>
+              <div><img src='https://storage.googleapis.com/web-spaces-production/signature/uri-logo.png' className={styles.logo} /></div>
+              <div><h1> URI Email Signature Tool</h1></div>
+            </div>
+            Easy email signature creator for students, faculty and staff at the University of Rhode Island.
+          </div>
+          <div>
+            <div className={`${styles.grid} ${styles.noSpace}`}>
+              <div><iframe className={styles.githubBtn} src="https://ghbtns.com/github-btn.html?user=ramhacks&repo=rhody-signature&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="125" height="30" title="GitHub"></iframe></div>
+              <div><iframe className={styles.githubBtn} src="https://ghbtns.com/github-btn.html?user=ramhacks&type=follow&count=true&size=large" frameborder="0" scrolling="0" width="230" height="30" title="GitHub"></iframe></div>
+            </div>
+          </div>
         </div>
-        Easy email signature creator for students, faculty and staff at the University of Rhode Island.
       </div>
+
 
       <div className={styles.grid}>
         
