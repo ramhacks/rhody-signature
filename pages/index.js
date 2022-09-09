@@ -94,7 +94,7 @@ export default function Home() {
           <h2>Contact card information</h2>
           <p>
             Enter your contact details you would like included on your email
-            signature. Leave feields blanks for information you wish not to
+            signature. Leave fields blank for information you wish not to
             include.
           </p>
 
@@ -157,14 +157,14 @@ export default function Home() {
 
         {/* Logo preview area */}
         <div className={styles.previewArea}>
-          <h2>Your email signature</h2>
+          <h2>Your email signature preview</h2>
 
           <p className={styles.dummyEmailContent}>
             Dear Rhody,
             <br />
             <br />
             This is a sample of an important email body. Words, sentences,
-            paragraphs, jokes,some emails will contain these, and more.
+            paragraphs, jokes, some emails will contain these, and more.
             <br />
             <br />
             Sincerely,
