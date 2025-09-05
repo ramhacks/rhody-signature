@@ -1,43 +1,44 @@
-import styles from "../styles/Home.module.css"
-import { useEffect, useState } from "react"
+import styles from "../styles/Home.module.css";
+import image from "./image";
+import { useEffect, useState } from "react";
 
 const ConctactCardItem = (props) => {
   return (
     <>
       {props.children ? <br /> : ""} {props.children}
     </>
-  )
-}
+  );
+};
 
 export default function Home() {
-  let [firstName, setFirstName] = useState("")
-  let [lastName, setLastName] = useState("")
+  let [firstName, setFirstName] = useState("");
+  let [lastName, setLastName] = useState("");
 
-  let [phone, setPhone] = useState("")
-  let [email, setEmail] = useState("")
+  let [phone, setPhone] = useState("");
+  let [email, setEmail] = useState("");
 
-  let [title, setTitle] = useState("")
-  let [org, setOrg] = useState("")
+  let [title, setTitle] = useState("");
+  let [org, setOrg] = useState("");
 
-  let [copied, setCopied] = useState(false)
+  let [copied, setCopied] = useState(false);
 
   // For copying rich text to the user's clipboard
   const copyToClipboard = (str) => {
     function listener(e) {
-      e.clipboardData.setData("text/html", str)
-      e.clipboardData.setData("text/plain", str)
-      e.preventDefault()
+      e.clipboardData.setData("text/html", str);
+      e.clipboardData.setData("text/plain", str);
+      e.preventDefault();
     }
-    document.addEventListener("copy", listener)
-    document.execCommand("copy")
-    document.removeEventListener("copy", listener)
-    setCopied(true)
-  }
+    document.addEventListener("copy", listener);
+    document.execCommand("copy");
+    document.removeEventListener("copy", listener);
+    setCopied(true);
+  };
 
   // Clear the copied message when the user updates their information
   useEffect(() => {
-    setCopied(false)
-  }, [phone, email, firstName, lastName, title, org])
+    setCopied(false);
+  }, [phone, email, firstName, lastName, title, org]);
 
   return (
     <div className={styles.container}>
@@ -47,10 +48,7 @@ export default function Home() {
           <div>
             <div className={`${styles.grid} ${styles.noSpace}`}>
               <div>
-                <img
-                  src="https://storage.googleapis.com/web-spaces-production/signature/uri-logo.png"
-                  className={styles.logo}
-                />
+                <img src={image()} className={styles.logo} />
               </div>
               <div>
                 <h1> URI Email Signature Tool</h1>
@@ -187,7 +185,7 @@ export default function Home() {
               <tr>
                 <td>
                   <img
-                    src="https://storage.googleapis.com/web-spaces-production/signature/uri-logo.png"
+                    src={image()}
                     style={{
                       height: "66px",
                     }}
@@ -235,5 +233,5 @@ export default function Home() {
         </div>
       </div>
     </div>
-  )
+  );
 }
