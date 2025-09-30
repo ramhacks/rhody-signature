@@ -2,7 +2,7 @@
 
 An online email signature creator tool. Allows a user to fill in their contact details, and copy the signature to their system clipboard for setting an email signature in Gmail, Outlook, etc.
 
-**Live Site**: [[https://signature.rhodyra.ms/](https://ramhacks.github.io/rhody-signature/)](https://ramhacks.github.io/rhody-signature/)
+**Live Site**: https://ramhacks.github.io/rhody-signature/
 
 **Contributors**: Ben Dahrooge <bdahrooge@uri.edu>
 
